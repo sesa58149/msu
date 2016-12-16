@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<MSUSockets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <MulticastAddresses>
+    <MulticastAddress Name="MulticastAddressGeneral" IP="239.254.1.2"/>
+    <MulticastAddress Name="MulticastAddressGroup0" IP="239.254.1.5"/>
+    <MulticastAddress Name="MulticastAddressGroup1" IP="239.254.1.6"/>
+    <MulticastAddress Name="MulticastAddressGroup2" IP="239.254.1.7"/>
+    <MulticastAddress Name="MulticastAddressGroup3" IP="239.254.1.8"/>
+  </MulticastAddresses>
+
+  <PortNumbers>
+    <PortNumber Name="DefaultPort" Port="567"/>
+    <PortNumber Name="Group0Port" Port="568"/>
+    <PortNumber Name="Group1Port" Port="569"/>
+    <PortNumber Name="Group2Port" Port="570"/>
+    <PortNumber Name="Group3Port" Port="571"/>
+  </PortNumbers>
+
+  <!--IP Version 0 - IPv4, 1 - IPv6-->
+  <IPVersion Version="0"/>
+
+</MSUSockets>

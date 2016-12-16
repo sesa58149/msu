@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MSUServer.MSUMessageFrames</name>
+    </assembly>
+    <members>
+        <member name="T:MSUServer.MSUMessageFrames.MSURecieveFrames.MSUAuthenticateResponse">
+            <summary>
+            Data Structure for the 'Authenticate Response'  Message.
+            </summary>
+        </member>
+        <member name="M:MSUServer.MSUMessageFrames.MSURecieveFrames.MSUAuthenticateResponse.#ctor">
+            <summary>
+            Constructor - defines the arrays
+            </summary>
+        </member>
+        <member name="T:MSUServer.MSUMessageFrames.OpcodesAndSubcodes">
+            <summary>
+            Class holds the constants for MSU Protocols' OpCodes and Subcodes
+            </summary>
+        </member>
+        <member name="T:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest">
+            <summary>
+            Data Structure for the 'Authenticate Request'  Message.
+            </summary>
+        </member>
+        <member name="M:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest.#ctor">
+            <summary>
+            Constructor - defines the arrays
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest._command">
+            <summary>
+            private field for <paramref name="Command"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest._reserved1">
+            <summary>
+            private field for <paramref name="Reserved1"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest._reserved2">
+            <summary>
+            private field for <paramref name="Reserved2"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest._versionInfo">
+            <summary>
+            private field for <paramref name="VersionInfo"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest._serverIP">
+            <summary>
+            private field for <paramref name="ServerIP"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest._transactionID">
+            <summary>
+            private field for <paramref name="TransactionID"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest._serverMacID">
+            <summary>
+            private field for <paramref name="ServerIP"/> property
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest.Command">
+            <summary>
+            Property which holds the MSU Command Message.
+            - Opcode : MSU Device Discover (4 bits)
+            - Subcode : Who Is (4 bits)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest.Reserved1">
+            <summary>
+            Reserved property for future usage.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest.Reserved2">
+            <summary>
+            Reserved property for future usage.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest.VersionInfo">
+            <summary>
+            Property which holds the MSU Protocol Version and IP Version.
+            - IP Version : IPV4 (0), IPV6 (1) (1 bit)
+            - Protocol Version – set to 2 (3 bits)
+            - Reserved bits (4 bits)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest.ServerIP">
+            <summary>
+            Server's IP address
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest.TransactionID">
+            <summary>
+            randomly generated transaction ID (Encrypted)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequest.ServerMacID">
+            <summary>
+            Server's Physical Address
+            </summary>
+        </member>
+        <member name="T:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequestDataWriter">
+            <summary>
+            MSU Authenticate Request Data Writer Class. 
+            - Writes the data onto the stream for sending data over the socket.
+            </summary>
+        </member>
+        <member name="M:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUAuthenticateRequestDataWriter.WriteMSUData(System.IO.BinaryWriter,MSUServer.MSUMessageFrames.Interfaces.IMSUData)">
+            <summary>
+            Writes the data onto the stream for sending data over the socket.
+            </summary>
+            <param name="writer">Binary Data Writer</param>
+            <param name="data">Data to be sent</param>
+        </member>
+        <member name="T:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs">
+            <summary>
+            Data Structure for the 'Who-Is' Multicast Message.
+            - The server sends the 'Who-Is' multicast message on the default multicast IP address 
+            and port number to discover all the clients on the network.
+            </summary>
+        </member>
+        <member name="M:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs.#ctor">
+            <summary>
+            Constructor - defines the arrays
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs._command">
+            <summary>
+            private field for <paramref name="Command"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs._isRange">
+            <summary>
+            private field for <paramref name="IsRange"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs._reserved">
+            <summary>
+            private field for <paramref name="Reserved"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs._versionInfo">
+            <summary>
+            private field for <paramref name="VersionInfo"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs._startRange">
+            <summary>
+            private field for <paramref name="StartRange"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs._endRange">
+            <summary>
+            private field for <paramref name="EndRange"/> property
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs.Command">
+            <summary>
+            Property which holds the MSU Command Message.
+            - Opcode : MSU Device Discover (4 bits)
+            - Subcode : Who Is (4 bits)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs.IsRange">
+            <summary>
+            Property which holds, whether the Scan to be performed on Range option or Device ID option.
+            - If TRUE, the Start Range and End Range should be provided. If FALSE, Start Range is
+            interpreted as the Device ID and the End Range is filled with zeros/null character.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs.Reserved">
+            <summary>
+            Reserved property for future usage.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs.VersionInfo">
+            <summary>
+            Property which holds the MSU Protocol Version and IP Version.
+            - IP Version : IPV4 (0), IPV6 (1) (1 bit)
+            - Protocol Version – set to 2 (3 bits)
+            - Reserved bits (4 bits)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs.StartRange">
+            <summary>
+            Scan Option's Start Range of Device's ID (IP Address in Network Order)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIs.EndRange">
+            <summary>
+            Scan Option's End Range of Device's ID (IP Address in Network Order)
+            </summary>
+        </member>
+        <member name="T:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIsDataWriter">
+            <summary>
+            MSU Who Is Data Writer Class. 
+            - Writes the data onto the stream for sending data over the socket.
+            </summary>
+        </member>
+        <member name="M:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUWhoIsDataWriter.WriteMSUData(System.IO.BinaryWriter,MSUServer.MSUMessageFrames.Interfaces.IMSUData)">
+            <summary>
+            Writes the data onto the stream for sending data over the socket.
+            </summary>
+            <param name="writer">Binary Data Writer</param>
+            <param name="data">Data to be sent</param>
+        </member>
+        <member name="M:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.#ctor">
+            <summary>
+            Constructor - defines the arrays
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._command">
+            <summary>
+            private field for <paramref name="Command"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._fileNumber">
+            <summary>
+            private field for <paramref name="FileNumber"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._versionInfo">
+            <summary>
+            private field for <paramref name="VersionInfo"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._fileSize">
+            <summary>
+            private field for <paramref name="FileSize"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._numberOfChunks">
+            <summary>
+            private field for <paramref name="NumberOfChunks"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._sequenceNumLimit">
+            <summary>
+            private field for <paramref name="SequenceNumLimit"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._sequenceSizeLimit">
+            <summary>
+            private field for <paramref name="SequenceSizeLimit"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._multicastAddress">
+            <summary>
+            private field for <paramref name="MulticastAddress"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._cmMulticastAddress">
+            <summary>
+            private field for <paramref name="CMMulticastAddress"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._portNumber">
+            <summary>
+            private field for <paramref name="PortNumber"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._cmportNumber">
+            <summary>
+            private field for <paramref name="CMPortNumber"/> property.
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._transactionID">
+            <summary>
+            private field for <paramref name="TransactionID"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._fileCRC">
+            <summary>
+            private field for <paramref name="FileCRC"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._fileNameLength">
+            <summary>
+            private field for <paramref name="FileNameLength"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._destPathLength">
+            <summary>
+            private field for <paramref name="DestPathLength"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._groupID">
+            <summary>
+            private field for <paramref name="GroupID"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._updateTimeout">
+            <summary>
+            private field for <paramref name="UpdateTimeout"/> property
+            </summary>
+        </member>
+        <member name="F:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage._varLengthData">
+            <summary>
+            private field for <paramref name="VarLengthData"/> property
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.Command">
+            <summary>
+            Property which holds the MSU Command Message.
+            - Opcode : MSU Device Discover (4 bits)
+            - Subcode : Who Is (4 bits)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.FileNumber">
+            <summary>
+            In case of upgrade process involving multiple files, this number represents the index of the file that is being transferred. 
+            This number starts from 1.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.VersionInfo">
+            <summary>
+            Property which holds the MSU Protocol Version and IP Version.
+            - IP Version : IPV4 (0), IPV6 (1) (1 bit)
+            - Protocol Version – set to 2 (3 bits)
+            - Reserved bits (4 bits)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.FileSize">
+            <summary>
+            Size of the file in bytes that is being transferred.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.NumberOfChunks">
+            <summary>
+            Total number of chunks in the current file transfer.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.SequenceNumLimit">
+            <summary>
+            Maximum number of sequences in the first chunk up to the last but one chunk. 
+            Note that the last chunk may have a smaller number of sequences depending on the file size. 
+            This limit should not be more than 32.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.SequenceSizeLimit">
+            <summary>
+            Maximum size in bytes of the data payload of a single packet sequence. 
+            Note that the last sequence of the last chunk may have a smaller size depending on the file size.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.MulticastAddress">
+            <summary>
+            The client systems that are interested in participating in the MSU process need to join this multicast address.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.CMMulticastAddress">
+            <summary>
+            The client systems which are interested in participating in the CM either in 
+            SCM or CCM need to join this multicast address.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.PortNumber">
+            <summary>
+            The client systems that are interested in participating in the MSU process need to 
+            listen on this port to receive multicast messages.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.CMPortNumber">
+            <summary>
+            The client systems which are interested in participating in the CM either in 
+            SCM or CCM need to listen on this port to receive CM multicast messages.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.TransactionID">
+            <summary>
+            Randomly generated number which uniquely represents one MSU cycle (Encrypted)
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.FileCRC">
+            <summary>
+            32-bit CRC of the file being transferred.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.FileNameLength">
+            <summary>
+            Length of the file name being transferred.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.DestPathLength">
+            <summary>
+            Length of the destination path of the file under transfer.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.GroupID">
+            <summary>
+            The T/F bit suggests whether the GroupID is valid or not. 
+            If valid, then this can be any number from 1 to 128 (7-bit). 
+            GroupID 0 is the default group.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.UpdateTimeout">
+            <summary>
+            On Communication failure for a period greater than this timeout value, the Client MUST exit from 
+            the current process and become available for next update cycle without participating for the rest 
+            of the current update process. 
+            The status of the client will remain 'FAIL' until the beginning of the next update cycle.
+            </summary>
+        </member>
+        <member name="P:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessage.VarLengthData">
+            <summary>
+            String of variable length, the length is specified by the previous field.
+            </summary>
+        </member>
+        <member name="T:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessageDataWriter">
+            <summary>
+            MSU Notification Message Data Writer Class. 
+            - Writes the data onto the stream for sending data over the socket.
+            </summary>
+        </member>
+        <member name="M:MSUServer.MSUMessageFrames.MSUTransmitFrames.MSUNotificationMessageDataWriter.WriteMSUData(System.IO.BinaryWriter,MSUServer.MSUMessageFrames.Interfaces.IMSUData)">
+            <summary>
+            Writes the data onto the stream for sending data over the socket.
+            </summary>
+            <param name="writer">Binary Data Writer</param>
+            <param name="data">Data to be sent</param>
+        </member>
+    </members>
+</doc>

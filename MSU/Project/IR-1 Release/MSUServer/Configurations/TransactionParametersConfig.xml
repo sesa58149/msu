@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<MSUTransactionParameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" savedDate="26-08-2014 10:40:57">
+
+  <SCMDelay>1000</SCMDelay>
+  <CCMDelay>1000</CCMDelay>
+  <SequenceDelay>20</SequenceDelay>
+  <SynchTime>1</SynchTime>
+  <ClientTimeout>10</ClientTimeout>
+  <CCMRetry>1</CCMRetry>
+  <SCMRetry>3</SCMRetry>
+  <SequenceLimit>32</SequenceLimit>
+
+</MSUTransactionParameters>

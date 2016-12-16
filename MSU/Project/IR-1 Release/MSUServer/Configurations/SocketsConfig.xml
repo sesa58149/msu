@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<MSUSocketsConfigurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <MulticastAddresses>
+    <MulticastAddress name="MulticastAddressGeneral" ipAddress="239.254.1.2" port="567"/>
+    <MulticastAddress name="MulticastAddressGroup0" ipAddress="239.254.1.5" port="568"/>
+    <MulticastAddress name="MulticastAddressGroup1" ipAddress="239.254.1.6" port="569"/>
+    <MulticastAddress name="MulticastAddressGroup2" ipAddress="239.254.1.7" port="570"/>
+    <MulticastAddress name="MulticastAddressGroup3" ipAddress="239.254.1.8" port="571"/>
+  </MulticastAddresses>
+
+  <!--IP Version 0 - IPv4, 1 - IPv6-->
+  <IPVersion Version="0"/>
+
+</MSUSocketsConfigurations>

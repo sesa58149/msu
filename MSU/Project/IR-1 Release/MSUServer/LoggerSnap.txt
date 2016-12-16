@@ -1,0 +1,5 @@
+01-09-2014 11:37:03     admin  logged into MSU Server Successfully
+01-09-2014 11:45:00     Scan Operation Initiated (MSU Who-Is Command multicasted)
+01-09-2014 11:45:03     No MSU Clients Found (No response for MSU Who-Is Command)
+01-09-2014 11:45:08     Scan Operation Initiated (MSU Who-Is Command multicasted)
+01-09-2014 11:45:11     No MSU Clients Found (No response for MSU Who-Is Command)

@@ -1,0 +1,17 @@
+9/19/2014 5:56:16 PM     admin  logged into MSU Server Successfully
+9/19/2014 5:56:22 PM     Scan Operation Initiated (MSU Who-Is Command multicasted)
+9/19/2014 5:56:33 PM     1 MSU Clients Found
+9/19/2014 5:56:44 PM     Selected Package : '2_2.zip' for Hardware Type: 'PLC'
+9/19/2014 5:58:18 PM     Scan Operation Initiated (MSU Who-Is Command multicasted)
+9/19/2014 5:58:39 PM     1 MSU Clients Found
+9/19/2014 5:58:40 PM     Scan Operation Initiated (MSU Who-Is Command multicasted)
+9/19/2014 5:59:13 PM     1 MSU Clients Found
+9/19/2014 5:59:14 PM     Scan Operation Initiated (MSU Who-Is Command multicasted)
+9/19/2014 5:59:19 PM     2 MSU Clients Found
+9/19/2014 5:59:24 PM     Selected Package : '2_2.zip' for Hardware Type: 'HMI'
+9/19/2014 6:26:00 PM     Scan Operation Initiated (MSU Who-Is Command multicasted)
+9/19/2014 6:26:11 PM     2 MSU Clients Found
+9/19/2014 6:26:15 PM     Selected Package : '2_2.zip' for Hardware Type: 'HMI'
+9/19/2014 6:29:38 PM     Scan Operation Initiated (MSU Who-Is Command multicasted)
+9/19/2014 6:29:43 PM     2 MSU Clients Found
+9/19/2014 6:29:46 PM     Selected Package : '2_2.zip' for Hardware Type: 'PLC'

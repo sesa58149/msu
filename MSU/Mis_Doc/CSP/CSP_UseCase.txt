@@ -1,0 +1,28 @@
+exposer of big network architecture and its adaptation for bigger network architecture.
+explore and collact pain point for other devices which is there on the network
+see the live netwrok will help in to understand the system limitation over the existing architecture.
+deep analysis on SG Backup tools so that MSU can cover all the feature which it has and can be replace by MSU
+currently MSU only support software upgarde not backup and restore feature is still need to cover.
+
+here is the main foucus from my side while visiting to Gemasolar Plant
+	1. Understand the current process of upgrade
+	2. Understand the existing archeture which will help us in designe more robust and secure MSU porotocol
+	3. Understand how restore and backup process done @site so that we can provide an alternet complete solution over SGBackup
+	4. Understand the system limitation over the existing architecture.
+	5. Collect pain point so that we can drive more Idea to make proccess faster and easy in future 
+	
+	Ethernet Architecture
+	Solar field
+	 complete Solar field devided in to many sub doman ring. 
+		Sub domain ring further devided into 11 secondry rings. 
+			Secondry rings consist of 38 M340 PLC
+	In a broadcast domain max 180 device can come
+	
+	Plant shape is ecllipse and devided in 3 sector/Ring and sector gave 8-10 group
+		each Ring consist of  128 heliostats 
+	 
+	 Apart from upgrade, backup and restore does SGBackup tool any other silent feature
+	 How (Which protocol) SGBackup gether application information from devices
+	 what is the frequnecy to check the device for app version
+	 how many max device entertain at a time in case of simultenious uses
+	 

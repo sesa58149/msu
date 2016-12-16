@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="D:\Project\MSU\Project\MidRange_Linux\MidRange_Linux.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="D:\Project\MSU\Project\MidRange_Linux\MidRange_Linux.workspace" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray"/>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+</Session>

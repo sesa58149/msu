@@ -1,0 +1,54 @@
+*****
+5/28/2014 4:02:53 PM
+DispatcherUnhandledException: System.InvalidOperationException: Directory .\Modules was not found.
+   at Microsoft.Practices.Prism.Modularity.DirectoryModuleCatalog.InnerLoad()
+   at Microsoft.Practices.Prism.Modularity.ModuleCatalog.Load()
+   at Microsoft.Practices.Prism.Modularity.ModuleCatalog.Initialize()
+   at Microsoft.Practices.Prism.Modularity.ModuleManager.Run()
+   at Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.InitializeModules()
+   at Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.Run(Boolean runWithDefaultConfiguration)
+   at Microsoft.Practices.Prism.Bootstrapper.Run()
+   at se.onefwtool.App.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+Source: Microsoft.Practices.Prism
+Message: Directory .\Modules was not found.
+StackTrace:    at Microsoft.Practices.Prism.Modularity.DirectoryModuleCatalog.InnerLoad()
+   at Microsoft.Practices.Prism.Modularity.ModuleCatalog.Load()
+   at Microsoft.Practices.Prism.Modularity.ModuleCatalog.Initialize()
+   at Microsoft.Practices.Prism.Modularity.ModuleManager.Run()
+   at Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.InitializeModules()
+   at Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.Run(Boolean runWithDefaultConfiguration)
+   at Microsoft.Practices.Prism.Bootstrapper.Run()
+   at se.onefwtool.App.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+*****
+5/28/2014 4:03:51 PM
+DispatcherUnhandledException: System.InvalidOperationException: Directory .\Modules was not found.
+   at Microsoft.Practices.Prism.Modularity.DirectoryModuleCatalog.InnerLoad()
+   at Microsoft.Practices.Prism.Modularity.ModuleCatalog.Load()
+   at Microsoft.Practices.Prism.Modularity.ModuleCatalog.Initialize()
+   at Microsoft.Practices.Prism.Modularity.ModuleManager.Run()
+   at Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.InitializeModules()
+   at Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.Run(Boolean runWithDefaultConfiguration)
+   at Microsoft.Practices.Prism.Bootstrapper.Run()
+   at se.onefwtool.App.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+Source: Microsoft.Practices.Prism
+Message: Directory .\Modules was not found.
+StackTrace:    at Microsoft.Practices.Prism.Modularity.DirectoryModuleCatalog.InnerLoad()
+   at Microsoft.Practices.Prism.Modularity.ModuleCatalog.Load()
+   at Microsoft.Practices.Prism.Modularity.ModuleCatalog.Initialize()
+   at Microsoft.Practices.Prism.Modularity.ModuleManager.Run()
+   at Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.InitializeModules()
+   at Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.Run(Boolean runWithDefaultConfiguration)
+   at Microsoft.Practices.Prism.Bootstrapper.Run()
+   at se.onefwtool.App.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)

@@ -1,0 +1,1 @@
+gcc -o MsuLinuxClient complainMode.c MsuFilePlatform.c MsuLeech.c msuMain.c MsuPdu.c MsuSocket.c MsuCRC32.c MsuSocketInterface.c 

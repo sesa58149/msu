@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RibbonButtonsModulesMapping>
+  
+  <!--Ribbon Buttons List-->
+  <RibbonButtons>
+    <RibbonButton Name="Loader" ViewType="MSUServer.Modules.MSUProcessModule.Views.MSUProcessView" />
+    <RibbonButton Name="Users" ViewType="MSUServer.Modules.MSUUserManagementModule.Views.UserManagementView" />    
+  </RibbonButtons>
+  
+</RibbonButtonsModulesMapping>

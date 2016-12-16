@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserManagementSettings>
+  <!--Domain List-->
+  <DomainList>
+    <Domain ID="Admin" />
+    <Domain ID="Operator" />
+    <Domain ID="Guest" />
+  </DomainList>
+  <!--Login List-->
+  <Users>
+    <user username="admin" password="admin" domain="Admin" />
+    <user username="guest" password="guest" domain="Guest" />
+    <user username="operator" password="operator" domain="Operator" />
+    <user username="MSUUser" password="gfdgf" domain="Operator" />
+  </Users>
+</UserManagementSettings>
